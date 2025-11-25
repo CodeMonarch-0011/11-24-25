@@ -1,9 +1,9 @@
 import "../../styles/home.css";
-import { ContactContextFunction } from "../../context/contact.jsx";
+// import { ContactContextFunction } from "../../context/contact.jsx";
 import image from "/images/img-8.webp";
 
 export function PersonalLife() {
-  const { openContactPopup } = ContactContextFunction();
+  // const { openContactPopup } = ContactContextFunction();
 
   return (
     <section className="personal-life" id="personal-life">
@@ -42,7 +42,7 @@ export function PersonalLife() {
           with calm, success with simplicity.
         </span>
 
-        <button onClick={openContactPopup}>Get in Touch</button>
+        {/* <button onClick={openContactPopup}>Get in Touch</button> */}
       </div>
     </section>
   );

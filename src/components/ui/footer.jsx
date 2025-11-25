@@ -1,16 +1,17 @@
 import "../../styles/ui.css";
 import { FaInstagram } from "react-icons/fa6";
-import { ContactContextFunction } from "../../context/contact.jsx";
+import { FaFacebook } from "react-icons/fa";
+// import { ContactContextFunction } from "../../context/contact.jsx";
 
 export function Footer() {
-  const { openContactPopup } = ContactContextFunction();
+  // const { openContactPopup } = ContactContextFunction();
 
   return (
     <section className="footer">
       <div className="footer-main">
         <div className="footer-left">
           <span>Jennifer Aniston</span>
-          <button onClick={openContactPopup}>Get in Touch</button>
+          {/* <button onClick={openContactPopup}>Get in Touch</button> */}
         </div>
 
         <nav className="footer-nav">
@@ -26,12 +27,21 @@ export function Footer() {
 
         <div className="footer-icons">
           <span
-          // onClick={() =>
-          //   (window.location.href =
-          //     "https://www.instagram.com/beefinspector?igsh=dDNwaWpob2djOTF3")
-          // }
+            onClick={() =>
+              (window.location.href =
+                "https://www.instagram.com/jenniferaniston?igsh=MXVwcmM2empya3g2cw==")
+            }
           >
             <FaInstagram />
+          </span>
+
+          <span
+            onClick={() =>
+              (window.location.href =
+                "https://www.facebook.com/share/1b71H2vAEm/?mibextid=wwXIfr")
+            }
+          >
+            <FaFacebook />
           </span>
         </div>
       </div>

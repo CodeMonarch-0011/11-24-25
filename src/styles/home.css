@@ -654,14 +654,47 @@ ul {
     gap: 28px;
     align-items: center;
   }
+
   .personal-life-txt,
   .looking-ahead-txt,
   .looking-ahead > div:nth-child(2) {
     text-align: left;
   }
 
+  .looking-ahead-txt,
+  .looking-ahead > div:nth-child(2) {
+    text-align: center;
+  }
+
+  .looking-ahead-txt {
+    font-style: italic;
+  }
+
   .rise-to-prominence-card {
     width: 100%;
+  }
+
+  .rise-to-prominence-list li {
+    list-style-type: none;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .rise-to-prominence-list ul li:first-child {
+    margin-top: 12px;
+  }
+
+  .rise-to-prominence-list li::before {
+    width: 6px;
+    height: 6px;
+    rotate: 45deg;
+    /* border-radius: 50%; */
+    background-color: white;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    translate: -50% -150%;
   }
 
   .film-work,

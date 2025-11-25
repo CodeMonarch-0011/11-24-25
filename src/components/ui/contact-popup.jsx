@@ -53,7 +53,7 @@ export function ContactPopup() {
 
     try {
       const response = await openMail(contactInfo);
-      // console.log(response);
+      console.log(response);
       addMessage({
         label: "Message sent successfully",
         type: "Success",
@@ -67,7 +67,7 @@ export function ContactPopup() {
         message: "",
       });
     } catch (err) {
-      // console.log(err);
+      console.log(err);
       addMessage({
         label: "Error Occurred, Try again",
         type: "error",

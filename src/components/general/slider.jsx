@@ -27,6 +27,7 @@ const SliderCnt = [
   },
 ];
 
+// eslint-disable-next-line react/prop-types
 function SliderItem({ label, nav, icon }) {
   const { closeSlider } = SliderContextFunction();
   function handleClick() {

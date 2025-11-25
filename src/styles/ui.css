@@ -77,6 +77,12 @@
   height: fit-content;
 }
 
+.footer-left > span:first-child {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
 .footer-left > button {
   font-size: clamp(0.88rem, 1vw, 1.125rem);
   cursor: pointer;

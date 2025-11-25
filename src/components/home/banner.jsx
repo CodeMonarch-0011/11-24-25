@@ -1,9 +1,9 @@
 import "../../styles/home.css";
 import image from "/images/img-2.webp";
-import { ContactContextFunction } from "../../context/contact.jsx";
+// import { ContactContextFunction } from "../../context/contact.jsx";
 
 export function Banner() {
-  const { openContactPopup } = ContactContextFunction();
+  // const { openContactPopup } = ContactContextFunction();
 
   return (
     <section className="banner" id="home">
@@ -25,7 +25,7 @@ export function Banner() {
           identity becomes cultural memory.
         </span>
 
-        <button onClick={openContactPopup}>Get in Touch</button>
+        {/* <button onClick={openContactPopup}>Get in Touch</button> */}
       </div>
 
       <div className="banner-img">
